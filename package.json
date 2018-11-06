@@ -4,7 +4,7 @@
   "description": "Tweets random MBMBAM quotes and Yahoo Answers questions ",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "node index.0.2.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +16,10 @@
     "cheerio": "^1.0.0-rc.2",
     "curl-request": "^1.1.1",
     "node-html-parser": "^1.1.10",
-    "nodewikiaapi": "^2.0.2"
+    "nodewikiaapi": "^2.0.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "unescape": "^1.0.1",
+    "wtf-8": "^1.0.1"
   }
 }
