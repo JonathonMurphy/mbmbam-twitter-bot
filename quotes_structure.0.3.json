@@ -1,0 +1,23 @@
+{
+  "byEpisode": [
+    {
+      "EpisodeTitle": "Ep 1 Something",
+      "episdoeQuotes": [
+        {
+          "beenTweeted": "true",
+          "quote": "something"
+        },
+        {
+          "beenTweeted": "false",
+          "quote": "Something Else"
+        }
+      ],
+      "episodeReplies": [
+        {
+          "beenTweeted": "false",
+          "quote": "Reply one"
+        }
+      ]
+    }
+  ]
+}
