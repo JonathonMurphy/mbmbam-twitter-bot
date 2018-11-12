@@ -30,7 +30,7 @@ function getArtilcesHtml() {
         //Loop through first 500 articles alphabettically
         for (i = 0; i < data.items.length; i++) {
             // Select the oens that have "Episode_" in the title (These are the articales about specific episodes)
-            let episode = data.items[i].url.includes("Episode");
+            let episode = data.items[i].url.includes("Episode_");
             if (episode) {
                 console.log(data.items[i]);
                 // Variables for file paths and URLS
