@@ -5,7 +5,7 @@ const fs = require('fs');
 
 const quotesJSON = fs.readFileSync('./quotes.json')
 const Mbmbam = JSON.parse(quotesJSON);
-const hastag = '#MBMBAM'
+const hastag = ' #MBMBAM'
 
 var T = new Twit({
   consumer_key:         'fzHfkiNorgQNlTDO5eMT5TQwV',
@@ -16,13 +16,25 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
 
-let quoteCount = Mbmbam.Quotes.length;
+function tweetIt(){
+  let quoteCount = Mbmbam.Quotes.length;
+  let quotePicker = Math.floor(Math.random()*quoteCount);
+  let todaysQuote = Mbmbam.Quotes[quotePicker]
+  T.post('statuses/update', { status: todaysQuote + hastag }, function(err, data, response) {
+    console.log('Tweet sent!')
+  })
+}
+setInterval(tweetIt, 86400000);
 
-let quotePicker = Math.floor(Math.random()*4687);
-
-let todaysQuote = Mbmbam.Quotes[quotePicker]
-
-
-T.post('statuses/update', { status: todaysQuote }, function(err, data, response) {
-  console.log(data)
-})
+// let stream = T.stream('user');
+// stream.on('follow', followed);
+// function followed(eventMsg){
+//   let replyCount = Mbmbam.Replies.length;
+//   let replyPicker = Math.floor(Math.random()*replyCount);
+//   let thisreply = Mbmbam.Replies[replyPicker];
+//   // let name = eventMsg.source.name;
+//   let screenname = eventMsg.source.screen_name;
+//   T.post('statuses/update', { status: "@" + screenname + ' ' + thisreply }, function(err, data, response) {
+//     console.log('Tweet sent!')
+//   })
+// }
