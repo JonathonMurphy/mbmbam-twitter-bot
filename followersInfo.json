@@ -1,0 +1,1101 @@
+{
+  "users": [
+    {
+      "id": 883704270721306600,
+      "id_str": "883704270721306624",
+      "name": "Ｐｈｏｓ but festive",
+      "screen_name": "phoscent",
+      "location": "Kamina City",
+      "description": "Ay sometimes I stream Monster Hunter and VRChat",
+      "url": "https://t.co/iHPRszzeAZ",
+      "entities": {
+        "url": {
+          "urls": [
+            {
+              "url": "https://t.co/iHPRszzeAZ",
+              "expanded_url": "http://twitch.tv/phoscent",
+              "display_url": "twitch.tv/phoscent",
+              "indices": [
+                0,
+                23
+              ]
+            }
+          ]
+        },
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 27,
+      "friends_count": 257,
+      "listed_count": 1,
+      "created_at": "Sat Jul 08 15:08:11 +0000 2017",
+      "favourites_count": 738,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 5577,
+      "lang": "en",
+      "status": {
+        "created_at": "Sun Dec 30 01:00:42 +0000 2018",
+        "id": 1079180441939337200,
+        "id_str": "1079180441939337216",
+        "text": "RT @djoats02: some of yall never had to watch anime on youtube at 360p with each episode split into 3 parts and it shows",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "djoats02",
+              "name": "morisummer djoats",
+              "id": 4367813116,
+              "id_str": "4367813116",
+              "indices": [
+                3,
+                12
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Fri Dec 28 18:01:06 +0000 2018",
+          "id": 1078712458171289600,
+          "id_str": "1078712458171289600",
+          "text": "some of yall never had to watch anime on youtube at 360p with each episode split into 3 parts and it shows",
+          "truncated": false,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+          },
+          "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 6828,
+          "favorite_count": 17519,
+          "favorited": false,
+          "retweeted": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 6828,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1033186021431803905/yNE-UuqC_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1033186021431803905/yNE-UuqC_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/883704270721306624/1499526775",
+      "profile_link_color": "BA7AFF",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1075850872167514100,
+      "id_str": "1075850872167514113",
+      "name": "Sad Cowboy Cat",
+      "screen_name": "DopeSwag42069",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2,
+      "friends_count": 13,
+      "listed_count": 0,
+      "created_at": "Thu Dec 20 20:30:11 +0000 2018",
+      "favourites_count": 28,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 5,
+      "lang": "en",
+      "status": {
+        "created_at": "Tue Dec 25 18:29:33 +0000 2018",
+        "id": 1077632455715274800,
+        "id_str": "1077632455715274752",
+        "text": "RT @JustinMcElroy: And unto us this day a savior is born https://t.co/x2JQboSU1S",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "JustinMcElroy",
+              "name": "Justin McElroy",
+              "id": 16421419,
+              "id_str": "16421419",
+              "indices": [
+                3,
+                17
+              ]
+            }
+          ],
+          "urls": [],
+          "media": [
+            {
+              "id": 1077571707379032000,
+              "id_str": "1077571707379032064",
+              "indices": [
+                57,
+                80
+              ],
+              "media_url": "http://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+              "url": "https://t.co/x2JQboSU1S",
+              "display_url": "pic.twitter.com/x2JQboSU1S",
+              "expanded_url": "https://twitter.com/JustinMcElroy/status/1077571714639376386/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 1125,
+                  "h": 714,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 432,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1125,
+                  "h": 714,
+                  "resize": "fit"
+                }
+              },
+              "source_status_id": 1077571714639376400,
+              "source_status_id_str": "1077571714639376386",
+              "source_user_id": 16421419,
+              "source_user_id_str": "16421419"
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1077571707379032000,
+              "id_str": "1077571707379032064",
+              "indices": [
+                57,
+                80
+              ],
+              "media_url": "http://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+              "url": "https://t.co/x2JQboSU1S",
+              "display_url": "pic.twitter.com/x2JQboSU1S",
+              "expanded_url": "https://twitter.com/JustinMcElroy/status/1077571714639376386/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 1125,
+                  "h": 714,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 432,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1125,
+                  "h": 714,
+                  "resize": "fit"
+                }
+              },
+              "source_status_id": 1077571714639376400,
+              "source_status_id_str": "1077571714639376386",
+              "source_user_id": 16421419,
+              "source_user_id_str": "16421419"
+            }
+          ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Lite</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Tue Dec 25 14:28:11 +0000 2018",
+          "id": 1077571714639376400,
+          "id_str": "1077571714639376386",
+          "text": "And unto us this day a savior is born https://t.co/x2JQboSU1S",
+          "truncated": false,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [],
+            "media": [
+              {
+                "id": 1077571707379032000,
+                "id_str": "1077571707379032064",
+                "indices": [
+                  38,
+                  61
+                ],
+                "media_url": "http://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+                "media_url_https": "https://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+                "url": "https://t.co/x2JQboSU1S",
+                "display_url": "pic.twitter.com/x2JQboSU1S",
+                "expanded_url": "https://twitter.com/JustinMcElroy/status/1077571714639376386/photo/1",
+                "type": "photo",
+                "sizes": {
+                  "large": {
+                    "w": 1125,
+                    "h": 714,
+                    "resize": "fit"
+                  },
+                  "thumb": {
+                    "w": 150,
+                    "h": 150,
+                    "resize": "crop"
+                  },
+                  "small": {
+                    "w": 680,
+                    "h": 432,
+                    "resize": "fit"
+                  },
+                  "medium": {
+                    "w": 1125,
+                    "h": 714,
+                    "resize": "fit"
+                  }
+                }
+              }
+            ]
+          },
+          "extended_entities": {
+            "media": [
+              {
+                "id": 1077571707379032000,
+                "id_str": "1077571707379032064",
+                "indices": [
+                  38,
+                  61
+                ],
+                "media_url": "http://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+                "media_url_https": "https://pbs.twimg.com/media/DvRNwjZWoAADVSf.jpg",
+                "url": "https://t.co/x2JQboSU1S",
+                "display_url": "pic.twitter.com/x2JQboSU1S",
+                "expanded_url": "https://twitter.com/JustinMcElroy/status/1077571714639376386/photo/1",
+                "type": "photo",
+                "sizes": {
+                  "large": {
+                    "w": 1125,
+                    "h": 714,
+                    "resize": "fit"
+                  },
+                  "thumb": {
+                    "w": 150,
+                    "h": 150,
+                    "resize": "crop"
+                  },
+                  "small": {
+                    "w": 680,
+                    "h": 432,
+                    "resize": "fit"
+                  },
+                  "medium": {
+                    "w": 1125,
+                    "h": 714,
+                    "resize": "fit"
+                  }
+                }
+              }
+            ]
+          },
+          "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 6707,
+          "favorite_count": 27741,
+          "favorited": false,
+          "retweeted": false,
+          "possibly_sensitive": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 6707,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1076038644161486848/vB8Wlx99_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1076038644161486848/vB8Wlx99_normal.jpg",
+      "profile_link_color": "ABB8C2",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1045156461662228500,
+      "id_str": "1045156461662228481",
+      "name": "soph🌊",
+      "screen_name": "shusaii",
+      "location": "Fort Gay, WV",
+      "description": "yes, im a certified detective. i got a jr detective star sticker.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 2,
+      "friends_count": 56,
+      "listed_count": 0,
+      "created_at": "Thu Sep 27 03:41:33 +0000 2018",
+      "favourites_count": 386,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 20,
+      "lang": "en",
+      "status": {
+        "created_at": "Mon Dec 31 02:03:25 +0000 2018",
+        "id": 1079558613071319000,
+        "id_str": "1079558613071319040",
+        "text": "W H A T https://t.co/BDaW9zi9BL",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/BDaW9zi9BL",
+              "expanded_url": "https://twitter.com/nm_nicknocturne/status/1079494097939910656",
+              "display_url": "twitter.com/nm_nicknocturn…",
+              "indices": [
+                8,
+                31
+              ]
+            }
+          ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": true,
+        "quoted_status_id": 1079494097939910700,
+        "quoted_status_id_str": "1079494097939910656",
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1079558982748930048/iow6atuS_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1079558982748930048/iow6atuS_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1045156461662228481/1543705898",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1070689836128964600,
+      "id_str": "1070689836128964608",
+      "name": "Nora Kendalyn",
+      "screen_name": "noraatknight",
+      "location": "Chicago",
+      "description": "chicago - berlin well-rounded nerd 🧡\n\nThe Adventure Zone / Steven Universe / some other stuff",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 14,
+      "friends_count": 54,
+      "listed_count": 0,
+      "created_at": "Thu Dec 06 14:42:04 +0000 2018",
+      "favourites_count": 34,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 10,
+      "lang": "en",
+      "status": {
+        "created_at": "Thu Dec 20 16:24:00 +0000 2018",
+        "id": 1075788921945108500,
+        "id_str": "1075788921945108484",
+        "text": "RT @jonnysun: guys really live in apartments where their roommate has eaten the plums that were in the icebox that they were saving for bre…",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "jonnysun",
+              "name": "jonny sun",
+              "id": 26259576,
+              "id_str": "26259576",
+              "indices": [
+                3,
+                12
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Wed Dec 19 10:15:28 +0000 2018",
+          "id": 1075333786227814400,
+          "id_str": "1075333786227814400",
+          "text": "guys really live in apartments where their roommate has eaten the plums that were in the icebox that they were savi… https://t.co/s8IkVoc5QY",
+          "truncated": true,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+              {
+                "url": "https://t.co/s8IkVoc5QY",
+                "expanded_url": "https://twitter.com/i/web/status/1075333786227814400",
+                "display_url": "twitter.com/i/web/status/1…",
+                "indices": [
+                  117,
+                  140
+                ]
+              }
+            ]
+          },
+          "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 624,
+          "favorite_count": 4887,
+          "favorited": false,
+          "retweeted": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 624,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1070689922250620928/KdqOAuCO_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1070689922250620928/KdqOAuCO_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1070689836128964608/1544457156",
+      "profile_link_color": "F58EA8",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": true,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 2977215114,
+      "id_str": "2977215114",
+      "name": "Tara Johnson",
+      "screen_name": "tara_flore_john",
+      "location": "",
+      "description": "",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 9,
+      "friends_count": 36,
+      "listed_count": 0,
+      "created_at": "Mon Jan 12 17:32:01 +0000 2015",
+      "favourites_count": 2212,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 504,
+      "lang": "en",
+      "status": {
+        "created_at": "Sat Dec 29 04:23:24 +0000 2018",
+        "id": 1078869065085665300,
+        "id_str": "1078869065085665280",
+        "text": "RT @ngoziu: @robochai wow!!! why did miles saying that line destroy my heart tho 🙃🙃🙃",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "ngoziu",
+              "name": "☆ Ngozi ☆",
+              "id": 15112153,
+              "id_str": "15112153",
+              "indices": [
+                3,
+                10
+              ]
+            },
+            {
+              "screen_name": "robochai",
+              "name": "🐰❄️ gale galligan ❄️🐰",
+              "id": 17825284,
+              "id_str": "17825284",
+              "indices": [
+                12,
+                21
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Thu Dec 20 02:53:00 +0000 2018",
+          "id": 1075584827682897900,
+          "id_str": "1075584827682897920",
+          "text": "@robochai wow!!! why did miles saying that line destroy my heart tho 🙃🙃🙃",
+          "truncated": false,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+              {
+                "screen_name": "robochai",
+                "name": "🐰❄️ gale galligan ❄️🐰",
+                "id": 17825284,
+                "id_str": "17825284",
+                "indices": [
+                  0,
+                  9
+                ]
+              }
+            ],
+            "urls": []
+          },
+          "source": "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>",
+          "in_reply_to_status_id": 1075584528234750000,
+          "in_reply_to_status_id_str": "1075584528234749954",
+          "in_reply_to_user_id": 17825284,
+          "in_reply_to_user_id_str": "17825284",
+          "in_reply_to_screen_name": "robochai",
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 2,
+          "favorite_count": 23,
+          "favorited": false,
+          "retweeted": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 2,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/996386855468847105/C8_3mU-E_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/996386855468847105/C8_3mU-E_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/2977215114/1526392114",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": false,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 883114970874912800,
+      "id_str": "883114970874912768",
+      "name": "elliot",
+      "screen_name": "pissmints",
+      "location": "",
+      "description": "Official ambassador to the ghost realm on behalf of the kingdom of the losers\n\nHe/him\n\nInstagram: hellocitizensoftheinternet",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 116,
+      "friends_count": 212,
+      "listed_count": 6,
+      "created_at": "Fri Jul 07 00:06:31 +0000 2017",
+      "favourites_count": 24171,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 3691,
+      "lang": "en",
+      "status": {
+        "created_at": "Mon Dec 31 17:07:10 +0000 2018",
+        "id": 1079786048660607000,
+        "id_str": "1079786048660606981",
+        "text": "@BeigeHippy i know",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "BeigeHippy",
+              "name": "G-Rey",
+              "id": 316187158,
+              "id_str": "316187158",
+              "indices": [
+                0,
+                11
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Lite</a>",
+        "in_reply_to_status_id": 1079783665624846300,
+        "in_reply_to_status_id_str": "1079783665624846337",
+        "in_reply_to_user_id": 316187158,
+        "in_reply_to_user_id_str": "316187158",
+        "in_reply_to_screen_name": "BeigeHippy",
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "000000",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1070081699483140096/aUNX_snl_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1070081699483140096/aUNX_snl_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/883114970874912768/1528153691",
+      "profile_link_color": "420420",
+      "profile_sidebar_border_color": "000000",
+      "profile_sidebar_fill_color": "000000",
+      "profile_text_color": "000000",
+      "profile_use_background_image": false,
+      "has_extended_profile": false,
+      "default_profile": false,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 1036083785542955000,
+      "id_str": "1036083785542955008",
+      "name": "Ella the Aviatrix",
+      "screen_name": "ellathegae",
+      "location": "",
+      "description": "Artsy, musically-inclined pilot in the making.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 4,
+      "friends_count": 32,
+      "listed_count": 0,
+      "created_at": "Sun Sep 02 02:49:58 +0000 2018",
+      "favourites_count": 8,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 19,
+      "lang": "en",
+      "status": {
+        "created_at": "Thu Dec 27 17:50:23 +0000 2018",
+        "id": 1078347376304173000,
+        "id_str": "1078347376304173056",
+        "text": "@Madelinee13 I happen to know someone who is both a horse chiropractor and horse massage therapist.",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "Madelinee13",
+              "name": "Madeline Jones",
+              "id": 1520957292,
+              "id_str": "1520957292",
+              "indices": [
+                0,
+                12
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "in_reply_to_status_id": 1078177850501431300,
+        "in_reply_to_status_id_str": "1078177850501431297",
+        "in_reply_to_user_id": 1520957292,
+        "in_reply_to_user_id_str": "1520957292",
+        "in_reply_to_screen_name": "Madelinee13",
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "F5F8FA",
+      "profile_background_image_url": null,
+      "profile_background_image_url_https": null,
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/1036085347682119680/GGl8cC5l_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/1036085347682119680/GGl8cC5l_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/1036083785542955008/1535857053",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    },
+    {
+      "id": 449404900,
+      "id_str": "449404900",
+      "name": "Andrew Hill",
+      "screen_name": "andrewofthehill",
+      "location": "Carrollton, GA",
+      "description": "Elite Pokemon trainer.",
+      "url": null,
+      "entities": {
+        "description": {
+          "urls": []
+        }
+      },
+      "protected": false,
+      "followers_count": 155,
+      "friends_count": 766,
+      "listed_count": 1,
+      "created_at": "Thu Dec 29 02:48:03 +0000 2011",
+      "favourites_count": 457,
+      "utc_offset": null,
+      "time_zone": null,
+      "geo_enabled": false,
+      "verified": false,
+      "statuses_count": 3213,
+      "lang": "en",
+      "status": {
+        "created_at": "Mon Dec 31 16:58:04 +0000 2018",
+        "id": 1079783761888399400,
+        "id_str": "1079783761888399361",
+        "text": "RT @TylerIAm: Walking in the city convinced me more than ever I got the vision to be a NFL RB. Just not the work ethic, speed, strength or…",
+        "truncated": false,
+        "entities": {
+          "hashtags": [],
+          "symbols": [],
+          "user_mentions": [
+            {
+              "screen_name": "TylerIAm",
+              "name": "Trill Withers",
+              "id": 334988605,
+              "id_str": "334988605",
+              "indices": [
+                3,
+                12
+              ]
+            }
+          ],
+          "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+          "created_at": "Wed Jun 21 23:04:02 +0000 2017",
+          "id": 877663429024022500,
+          "id_str": "877663429024022533",
+          "text": "Walking in the city convinced me more than ever I got the vision to be a NFL RB. Just not the work ethic, speed, strength or physique",
+          "truncated": false,
+          "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": []
+          },
+          "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+          "in_reply_to_status_id": null,
+          "in_reply_to_status_id_str": null,
+          "in_reply_to_user_id": null,
+          "in_reply_to_user_id_str": null,
+          "in_reply_to_screen_name": null,
+          "geo": null,
+          "coordinates": null,
+          "place": null,
+          "contributors": null,
+          "is_quote_status": false,
+          "retweet_count": 716,
+          "favorite_count": 2047,
+          "favorited": false,
+          "retweeted": false,
+          "lang": "en"
+        },
+        "is_quote_status": false,
+        "retweet_count": 716,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+      },
+      "contributors_enabled": false,
+      "is_translator": false,
+      "is_translation_enabled": false,
+      "profile_background_color": "C0DEED",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+      "profile_background_tile": false,
+      "profile_image_url": "http://pbs.twimg.com/profile_images/585275883654488064/Wt5lwfTW_normal.jpg",
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/585275883654488064/Wt5lwfTW_normal.jpg",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/449404900/1428375617",
+      "profile_link_color": "1DA1F2",
+      "profile_sidebar_border_color": "C0DEED",
+      "profile_sidebar_fill_color": "DDEEF6",
+      "profile_text_color": "333333",
+      "profile_use_background_image": true,
+      "has_extended_profile": true,
+      "default_profile": true,
+      "default_profile_image": false,
+      "following": true,
+      "live_following": false,
+      "follow_request_sent": false,
+      "notifications": false,
+      "muting": false,
+      "blocking": false,
+      "blocked_by": false,
+      "translator_type": "none"
+    }
+  ],
+  "next_cursor": 0,
+  "next_cursor_str": "0",
+  "previous_cursor": 0,
+  "previous_cursor_str": "0",
+  "total_count": null
+}

@@ -51,7 +51,7 @@ function getQuotes (episodeURL) {
         $('p, u, i').each(function (i, elem) {
 
           // Filter Selection Section
-          // .*,.*,.*,.*, regex for the episode summary entries 
+          // .*,.*,.*,.*,.*,.*, regex for the episode summary entries 
           const regexFilter = /\byahoo\b|\bsponsored\b|\bmbmbam\b|\bhousekeeping\b|\boriginally released\b|\bepisode\b|\bSuggested talking points\b|\bintro\b|\bMy Brother My Brother and Me\b/gi;
           const regexTimeStamp = /[0-9]{1,2}:+[0-9]{2}/gm;
           let textLength = $(this).text().length;

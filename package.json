@@ -4,7 +4,7 @@
   "description": "Tweets random MBMBAM quotes and Yahoo Answers questions ",
   "main": "index.js",
   "scripts": {
-    "start": "node --max-old-space-size=4096 buildJSON.0.2.js",
+    "start": "node tweetQuotes.0.1.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
