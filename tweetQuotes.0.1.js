@@ -59,6 +59,7 @@ function pickReply(){
       // TODO: Refactor as a case statement that functions like the animation loop in a game engine (maybe fetching data every 15 mintes or so)
       /*
       switch(expresion) {
+      // time since midnight in millieseconds 
         case tweetTimes[0]:
           // code block
           // Run postTweet()
