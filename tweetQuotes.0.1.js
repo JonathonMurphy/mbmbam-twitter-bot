@@ -3,10 +3,10 @@ const util = require('util');
 const path = require('path');
 const fs = require('fs');
 
-const quotesJSON = fs.readFileSync('./quotes.json');
+const quotesJSON = fs.readFileSync('./quotes/quotes.json');
 const Mbmbam = JSON.parse(quotesJSON);
 const hashtag = ' #MBMBAM';
-let followersJSON = fs.readFileSync('./followersInfo.json');
+let followersJSON = fs.readFileSync('./followers/followersInfo.json');
 let Followers = JSON.parse(followersJSON);
 let followersArrayLength = Followers.users.length;
 
@@ -59,7 +59,7 @@ function pickReply(){
       // TODO: Refactor as a case statement that functions like the animation loop in a game engine (maybe fetching data every 15 mintes or so)
       /*
       switch(expresion) {
-      // time since midnight in millieseconds 
+      // time since midnight in millieseconds
         case tweetTimes[0]:
           // code block
           // Run postTweet()
@@ -139,20 +139,20 @@ function pickReply(){
           console.log('error:', err);
           // context.fail();
         } else {
-          fs.writeFileSync('./newFollowersInfo.json', JSON.stringify(data), function(err) {
+          fs.writeFileSync('./followers/newFollowersInfo.json', JSON.stringify(data), function(err) {
             if(err) console.log(err)
           })
-          let newFollowersJSON = fs.readFileSync('./newFollowersInfo.json');
+          let newFollowersJSON = fs.readFileSync('./followers/newFollowersInfo.json');
           let NewFollowers = JSON.parse(followersJSON);
           let newFollowersArrayLength = NewFollowers.users.length;
           if (followersArrayLength < newFollowersArrayLength) {
             followUser(NewFollowers);
             postReply(NewFollowers);
-            fs.rename('./newFollowersInfo.json', './followersInfo.json', function(err) {
+            fs.rename('./followers/newFollowersInfo.json', './followers/followersInfo.json', function(err) {
             if (err) {
               console.log('ERROR: ' + err);
             } else {
-              followersJSON = fs.readFileSync('./followersInfo.json');
+              followersJSON = fs.readFileSync('./followers/followersInfo.json');
               Followers = JSON.parse(followersJSON);
               followersArrayLength = Followers.users.length;
             }

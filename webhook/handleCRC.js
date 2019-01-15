@@ -1,14 +1,7 @@
 const crypto = require('crypto');
 const config = require('./oauth');
+const http = require('http');
 const consumer_secret = config.consumer_secret;
-
-
-/**
- * Creates a HMAC SHA-256 hash created from the app TOKEN and
- * your app Consumer Secret.
- * @param  token  the token provided by the incoming GET request
- * @return string
- */
 
 module.exports.get_challenge_response = function(crc_token, consumer_secret) {
 
