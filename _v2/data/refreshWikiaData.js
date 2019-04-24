@@ -1,0 +1,98 @@
+console.log("We bout to get some data ya'll" + "\n");
+
+const Wikiaapi = require('nodewikiaapi'),
+      wiki = 'http://mbmbam.wikia.com',
+      rp = require('request-promise'),
+      mywiki = new Wikiaapi('mbmbam'),
+      cheerio = require('cheerio'),
+      util = require('util'),
+      path = require('path'),
+      fs = require('fs');
+
+function getEpisodes() {
+  mywiki.getArticlesList({
+      limit: 1000
+  }).then(function (data) {
+    let episodeArray = [];
+    data.items.forEach(function (item, i) {
+      if (data.items[i].url.includes('Episode_') && !data.items[i].url.hasOwnProperty('undefined') ) {
+        episodeArray.push(data.items[i].url);
+      }
+    })
+    getQuotes(episodeArray)
+  }).catch(function (error) {
+    console.error(error);
+  })
+} // End of getEpisodes function
+
+function getQuotes (episodeURL) {
+  let mbmbamQuotes = new Object();
+  // Start of new data structure
+  mbmbamQuotes.episodes = [];
+  episodeURL.forEach(function (episode, index, array){
+    let quoteObject = {
+      url: episodeURL[index],
+      quotes: {
+        justin: [],
+        travis: [],
+        griffin: [],
+        unattributed: []
+      }
+    };
+    const options = {
+      uri: 'http://mbmbam.wikia.com' + episodeURL[index],
+      transform: function (body) {
+        return cheerio.load(body);
+      }
+    };
+
+    rp(options)
+      .then(function ($) {
+        let episodeName = options.uri.replace('http://mbmbam.wikia.com/wiki/', '');
+        $('p, u, i').each(function (i, elem) {
+          const regexFilter = /\byahoo\b|\bsponsored\b|\bmbmbam\b|\bhousekeeping\b|\boriginally released\b|\bepisode\b|\bSuggested talking points\b|\bintro\b|\bMy Brother My Brother and Me\b|\b.*,.*,.*,.*\b/gi;
+          const regexTimeStamp = /[0-9]{1,2}:+[0-9]{2}/gm;
+          let textLength = $(this).text().length;
+          let text = $(this).text().replace('"', '');
+
+          let m;
+          if ((m = regexTimeStamp.test(text)) == true) {
+            let subStringSelection = text.substring(0,2);
+            text.replace('subStringSelection', '')
+            return text;
+          }
+          if (textLength < 272 && textLength > 15 && (m = regexFilter.test(text)) == false) {
+            if (text.includes('J:') || text.includes('Justin:')) {
+              text = text.replace('J: ', '');
+              text = text.replace('Justin:', '');
+              quoteObject.quotes.justin.push(text);
+            } else if (text.includes('T:') || text.includes('Travis:')) {
+              text = text.replace('T: ', '');
+              text = text.replace('Travis:', '');
+              quoteObject.quotes.travis.push(text);
+            } else if (text.includes('G:') || text.includes('Griffin:')) {
+              text = text.replace('G: ', '');
+              text = text.replace('Griffin:', '');
+              quoteObject.quotes.griffin.push(text);
+            } else {
+              text = text.replace('[???]: ', '');
+              quoteObject.quotes.unattributed.push(text);
+            }
+          }
+        }) // End of Filter Selection Section
+
+        mbmbamQuotes.episodes.push(quoteObject);
+
+      }).then(function(){
+        fs.writeFileSync('./quotes/wikiaQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
+          if(err) console.log(err)
+        })
+      })
+      .catch(function (err) {
+        console.error(err);
+      })
+  })
+
+}
+
+getEpisodes();
