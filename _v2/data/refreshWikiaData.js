@@ -1,5 +1,8 @@
 console.log("We bout to get some data ya'll" + "\n");
 
+// Regex that should match Griffin:. G: or any other brothers name (and Clint) even if misspelled
+// /\[J|T|G|C][a-z]{0,6}\:
+
 const Wikiaapi = require('nodewikiaapi'),
       wiki = 'http://mbmbam.wikia.com',
       rp = require('request-promise'),
@@ -7,7 +10,11 @@ const Wikiaapi = require('nodewikiaapi'),
       cheerio = require('cheerio'),
       util = require('util'),
       path = require('path'),
+      _cliProgress = require('cli-progress'),
+      bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');
+
+bar1.start(1107, 0);
 
 function getEpisodes() {
   mywiki.getArticlesList({
@@ -15,6 +22,7 @@ function getEpisodes() {
   }).then(function (data) {
     let episodeArray = [];
     data.items.forEach(function (item, i) {
+      bar1.increment();
       if (data.items[i].url.includes('Episode_') && !data.items[i].url.hasOwnProperty('undefined') ) {
         episodeArray.push(data.items[i].url);
       }
@@ -30,8 +38,10 @@ function getQuotes (episodeURL) {
   // Start of new data structure
   mbmbamQuotes.episodes = [];
   episodeURL.forEach(function (episode, index, array){
+    bar1.increment();
     let quoteObject = {
-      url: episodeURL[index],
+      url: wiki + episodeURL[index],
+      episode: episodeURL[index].substr(6).replace('_', ' '),
       quotes: {
         justin: [],
         travis: [],
@@ -62,6 +72,7 @@ function getQuotes (episodeURL) {
             return text;
           }
           if (textLength < 272 && textLength > 15 && (m = regexFilter.test(text)) == false) {
+            // Filters quotes by brother
             if (text.includes('J:') || text.includes('Justin:')) {
               text = text.replace('J: ', '');
               text = text.replace('Justin:', '');
@@ -74,7 +85,7 @@ function getQuotes (episodeURL) {
               text = text.replace('G: ', '');
               text = text.replace('Griffin:', '');
               quoteObject.quotes.griffin.push(text);
-            } else {
+            } else if (text.length !== 0) {
               text = text.replace('[???]: ', '');
               quoteObject.quotes.unattributed.push(text);
             }

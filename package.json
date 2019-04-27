@@ -14,9 +14,10 @@
   "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
-    "curl-request": "^1.1.1",
+    "cli-progress": "^2.1.1",
     "node-html-parser": "^1.1.10",
     "nodewikiaapi": "^2.0.2",
+    "puppeteer": "^1.15.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "twit": "^2.2.11",

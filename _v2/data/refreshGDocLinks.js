@@ -4,7 +4,6 @@ const puppeteer = require('puppeteer'),
 
 // Generate array of URL's from the Complpeted MBMBAM Transcripts G Doc list.
 (async () => {
-  console.log('Is this thing on...');
   try {
     // Fires up puppeteer in headless mode, and loads up the page.
     const browser = await puppeteer.launch({headless: true});
@@ -29,7 +28,7 @@ const puppeteer = require('puppeteer'),
     let links = $('#kix-appview').find('a.kix-link');
     // Loops through all the links, pulls the URL out and adds it to the linkArray.
     links.each(function (i, elem) {
-      if ($(this).attr('href') !== 'https://docs.google.com/document/d/1w1hOGVWNtPV6hedi2puDru-Xq6nzo87KQTxPB7GX8kw/edit?usp=sharing') {
+      if ($(this).attr('href').includes('/edit') !== true) {
         linkArray.urls.push($(this).attr('href'));
       }
     });
