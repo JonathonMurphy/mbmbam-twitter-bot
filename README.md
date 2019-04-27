@@ -1,5 +1,8 @@
 # My Brother, My Brother, and Me Twitter Bot
 
+This is a Twitter bot that tweets quotes from the podcast 'My Brother, My Brother, and Me' that are pulled from two locations.
+The first is the MBMBAM Wikia, and the second is the MBMBAM Transcript Project.
+
 https://twitter.com/Mbmbam_Quotes
 
 ## Author
