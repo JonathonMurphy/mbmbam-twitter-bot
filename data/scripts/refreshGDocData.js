@@ -1,5 +1,6 @@
 const puppeteer = require('puppeteer'),
       cheerio = require('cheerio'),
+      sortQuotes = require('../../lib/sortQuotes.js'),
       _cliProgress = require('cli-progress'),
       bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');
@@ -72,23 +73,7 @@ const regexEpisodeTitle = /MBMBAM \d{2,}\:/gm;
         $('#contents').children('p').each(function (i, elem) {
           let text = $(this).text();
           // Filters by brother
-          if (text.includes('J:') || text.includes('Justin:')) {
-            text = text.replace('J: ', '');
-            text = text.replace('Justin:', '');
-            quoteObject.quotes.justin.push(text);
-          } else if (text.includes('T:') || text.includes('Travis:')) {
-            text = text.replace('T: ', '');
-            text = text.replace('Travis:', '');
-            quoteObject.quotes.travis.push(text);
-          } else if (text.includes('G:') || text.includes('Griffin:')) {
-            text = text.replace('G: ', '');
-            text = text.replace('Griffin:', '');
-            quoteObject.quotes.griffin.push(text);
-          } else if (regexEpisodeTitle.test(text) == true) {
-            quoteObject.episode= text;
-          } else if (text.length !== 0) {
-            quoteObject.quotes.unattributed.push(text);
-          }
+          sortQuotes(text, quoteObject);
         });
         // Push new episode object in to the array
         mbmbamQuotes.episodes.push(quoteObject);

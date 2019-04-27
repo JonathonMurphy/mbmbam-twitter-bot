@@ -10,6 +10,7 @@ const Wikiaapi = require('nodewikiaapi'),
       cheerio = require('cheerio'),
       util = require('util'),
       path = require('path'),
+      sortQuotes = require('../../lib/sortQuotes.js'),
       _cliProgress = require('cli-progress'),
       bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');
@@ -73,29 +74,14 @@ function getQuotes (episodeURL) {
           }
           if (textLength < 272 && textLength > 15 && (m = regexFilter.test(text)) == false) {
             // Filters quotes by brother
-            if (text.includes('J:') || text.includes('Justin:')) {
-              text = text.replace('J: ', '');
-              text = text.replace('Justin:', '');
-              quoteObject.quotes.justin.push(text);
-            } else if (text.includes('T:') || text.includes('Travis:')) {
-              text = text.replace('T: ', '');
-              text = text.replace('Travis:', '');
-              quoteObject.quotes.travis.push(text);
-            } else if (text.includes('G:') || text.includes('Griffin:')) {
-              text = text.replace('G: ', '');
-              text = text.replace('Griffin:', '');
-              quoteObject.quotes.griffin.push(text);
-            } else if (text.length !== 0) {
-              text = text.replace('[???]: ', '');
-              quoteObject.quotes.unattributed.push(text);
-            }
+            sortQuotes(text, quoteObject);
           }
         }) // End of Filter Selection Section
 
         mbmbamQuotes.episodes.push(quoteObject);
 
       }).then(function(){
-        fs.writeFileSync('./quotes/wikiaQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
+        fs.writeFileSync('../quotes/wikiaQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
           if(err) console.log(err)
         })
       })
