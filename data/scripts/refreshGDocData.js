@@ -10,7 +10,7 @@ console.log('Is this thing on...')
 // Gets array of links from JSON document
 let gDocLinks;
   try {
-    gDocLinks = JSON.parse(fs.readFileSync('./gDocLinks.json'));
+    gDocLinks = JSON.parse(fs.readFileSync('../gDocLinks.json'));
   } catch (err) {
     if (err.code === 'ENOENT') {
       console.log('File not found!');

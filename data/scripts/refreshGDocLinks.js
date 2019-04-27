@@ -34,7 +34,7 @@ const puppeteer = require('puppeteer'),
     });
 
     // linkArray.urls.slice(2);
-    fs.writeFileSync('./gDocLinks.json', JSON.stringify(linkArray), function(err) {
+    fs.writeFileSync('../gDocLinks.json', JSON.stringify(linkArray), function(err) {
       if(err) console.log(err)
     })
     await browser.close();
