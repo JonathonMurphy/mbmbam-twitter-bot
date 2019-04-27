@@ -1,6 +1,4 @@
-const config = require('../oauth.js'),
-      Twit = require('twit'),
-      T = new Twit(config),
+const postTweet = require('../lib/postTweet.js'),
       hashtag = ' #MBMBAM',
       fs = require('fs');
 
@@ -48,7 +46,7 @@ function pickTweet () {
   }
   // Selects a quote from the currently selected brother array
   let quotePicker = Math.floor(Math.random()*quoteArray.length);
-  let currentQuote = quoteArray[quotePicker];
+  let currentQuote = quoteArray[quotePicker] + hashtag;
   // Checks if the quote is valid for twitter
   // Should always return a valid quote
   if (currentQuote !== undefined && (currentQuote + hashtag).length < 280 && currentQuote.length > 30) {
@@ -56,17 +54,6 @@ function pickTweet () {
   } else  {
     pickTweet ();
   }
-}
-
-function postTweet(tweet) {
-  console.log(tweet + hashtag);
-  // T.post('statuses/update', { status: tweet + hashtag }, function(err, data, response) {
-  //   if (err) {
-  //     console.log('error:', err);
-  //   } else {
-  //     console.log('Tweet sent: ' + tweet + hashtag);
-  //   }
-  // });
 }
 
 pickTweet();
