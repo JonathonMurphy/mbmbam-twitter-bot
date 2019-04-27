@@ -1,4 +1,4 @@
-const config = require('../../oauth.js'),
+const config = require('../oauth.js'),
       Twit = require('twit'),
       T = new Twit(config),
       hashtag = ' #MBMBAM',
