@@ -5,6 +5,13 @@ The first is the MBMBAM Wikia, and the second is the MBMBAM Transcript Project.
 
 https://twitter.com/Mbmbam_Quotes
 
+## Setup
+
+* Clone repo
+* npm install
+* Create oauth.js file
+* Setup cron jobs to send tweet, get followers, etc 
+
 ## Author
 
 * Jonathon Seth Murphy
