@@ -1,6 +1,7 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 const puppeteer = require('puppeteer'),
       cheerio = require('cheerio'),
+      path = require('path'),
       fs = require('fs');
 
 // Generate array of URL's from the Complpeted MBMBAM Transcripts G Doc list.

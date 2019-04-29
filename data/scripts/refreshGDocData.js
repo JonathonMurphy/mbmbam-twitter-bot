@@ -1,10 +1,11 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 console.log('Is this thing on...');
 
 const puppeteer = require('puppeteer'),
       cheerio = require('cheerio'),
       sortQuotes = require('../../lib/sortQuotes.js'),
       _cliProgress = require('cli-progress'),
+      path = require('path'),
       fs = require('fs');
 // Start progress bar
 const bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic);

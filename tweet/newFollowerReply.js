@@ -1,9 +1,15 @@
-#!/usr/bin/env node 
-const postTweet = require('../lib/postTweet.js'),
+#!/usr/bin/env node
+const path = require('path'),
       fs = require('fs');
 
-const newFollowerReplies = JSON.parse(fs.readFileSync('../data/replies/newFollowerReplies.json'));
-const followerInfo = JSON.parse(fs.readFileSync('../followers/data/followerInfo.json'));
+const newFollowerRepliesPath = path.resolve(__dirname, '../data/replies/newFollowerReplies.json'),
+      followerInfoPath = path.resolve(__dirname, '../followers/data/followerInfo.json'),
+      postTweetPath = path.resolve(__dirname, '../lib/postTweet.js');
+
+const postTweet = require(postTweetPath);
+
+const newFollowerReplies = JSON.parse(fs.readFileSync(newFollowerRepliesPath));
+const followerInfo = JSON.parse(fs.readFileSync(followerInfoPath));
 
 function checkForNewFollowers () {
   for (i=0; i < followerInfo.users.length; i++) {

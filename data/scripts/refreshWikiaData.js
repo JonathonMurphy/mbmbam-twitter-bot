@@ -1,4 +1,4 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 console.log("We bout to get some data ya'll" + "\n");
 // Maybe pull this out into two scripts so that it can be handled similarly to the gDocs
 // One script to get links and store the
@@ -11,6 +11,7 @@ const Wikiaapi = require('nodewikiaapi'),
       queryString = require('query-string'),
       cheerio = require('cheerio'),
       sortQuotes = require('../../lib/sortQuotes.js'),
+      path = require('path'),
       // _cliProgress = require('cli-progress'),
       // bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');

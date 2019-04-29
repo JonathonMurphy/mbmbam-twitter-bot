@@ -1,9 +1,14 @@
-#!/usr/bin/env node 
-const postTweet = require('../lib/postTweet.js'),
+#!/usr/bin/env node
+const path = require('path'),
       hashtag = ' #MBMBAM',
       fs = require('fs');
 
-const quoteData = JSON.parse(fs.readFileSync('../data/quotes/concatQuotes.json'));
+const quoteDataPath = path.resolve(__dirname, '../data/quotes/concatQuotes.json'),
+      postTweetPath = path.resolve(__dirname, '../lib/postTweet.js');
+
+const postTweet = require(postTweetPath);
+
+const quoteData = JSON.parse(fs.readFileSync(quoteDataPath));
 
 function pickTweet () {
   // Generates a random whole number between 1 and 4

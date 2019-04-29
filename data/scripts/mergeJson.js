@@ -1,7 +1,8 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 // In the future we can use jq to merge the files by the episode title
 
-const jsonConcat = require("json-concat");
+const jsonConcat = require("json-concat"),
+      path = require('path');
 
 jsonConcat({
     src: ['../quotes/gDocQuotes.json', '../quotes/wikiaQuotes.json'],

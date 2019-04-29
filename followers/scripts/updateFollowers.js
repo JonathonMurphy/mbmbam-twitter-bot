@@ -1,8 +1,15 @@
-#!/usr/bin/env node 
-const config = require('../../oauth.js'),
-      Twit = require('twit'),
-      T = new Twit(config),
+#!/usr/bin/env node
+const Twit = require('twit'),
+      path = require('path'),
       fs = require('fs');
+
+const configPath = path.resolve(__dirname, '../../oauth.js'),
+      followerInfoPath = path.resolve(__dirname, '../data/followerInfo.json');
+
+
+const config = require(configPath),
+      T = new Twit(config);
+
 
 let followers = {
   note: "A user's following status may say 'false' if they were just followed when the script was run." ,
@@ -45,7 +52,7 @@ function getFollowerInfo() {
         followers.users.push(userInfo);
       }
       // Writes log file
-      fs.writeFileSync('../data/followerInfo.json', JSON.stringify(followers), function(err) {
+      fs.writeFileSync(followerInfoPath, JSON.stringify(followers), function(err) {
         if(err) console.log(err)
       })
 
