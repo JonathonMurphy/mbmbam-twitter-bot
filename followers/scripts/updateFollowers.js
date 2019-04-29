@@ -1,3 +1,4 @@
+#!/usr/bin/env node 
 const config = require('../../oauth.js'),
       Twit = require('twit'),
       T = new Twit(config),

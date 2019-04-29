@@ -1,3 +1,4 @@
+#!/usr/bin/env node 
 console.log('Is this thing on...');
 
 const puppeteer = require('puppeteer'),

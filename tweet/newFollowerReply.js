@@ -1,3 +1,4 @@
+#!/usr/bin/env node 
 const postTweet = require('../lib/postTweet.js'),
       fs = require('fs');
 

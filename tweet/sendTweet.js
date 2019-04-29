@@ -1,3 +1,4 @@
+#!/usr/bin/env node 
 const postTweet = require('../lib/postTweet.js'),
       hashtag = ' #MBMBAM',
       fs = require('fs');

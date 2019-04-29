@@ -1,4 +1,5 @@
-// In the future we can use jq to merge the files by the episode title 
+#!/usr/bin/env node 
+// In the future we can use jq to merge the files by the episode title
 
 const jsonConcat = require("json-concat");
 

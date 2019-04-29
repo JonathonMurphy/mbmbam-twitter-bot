@@ -1,3 +1,4 @@
+#!/usr/bin/env node 
 console.log("We bout to get some data ya'll" + "\n");
 // Maybe pull this out into two scripts so that it can be handled similarly to the gDocs
 // One script to get links and store the
@@ -44,7 +45,7 @@ function getQuotes (episodeURL) {
       // This obtusely long value is taking the URLs ending, removing the '/wiki/' part
       // decoding with queryString.parse then  getting the key of the resulting object
       // removing it from an array, and then finally removing the '_' characters and
-      // replacing them with spaces 
+      // replacing them with spaces
       episode: Object.keys(queryString.parse(episodeURL[index].substr(6)))[0].replace(/_/g, ' '),
       quotes: {
         justin: [],
