@@ -4,9 +4,13 @@
 const jsonConcat = require("json-concat"),
       path = require('path');
 
+const gDocQuotesPath = path.resolve(__dirname, '../quotes/gDocQuotes.json'),
+      wikiaQuotesPath = path.resolve(__dirname, '../quotes/wikiaQuotes.json'),
+      mergedQuotesPath = path.resolve(__dirname, '../quotes/mergedQuotes.json');
+
 jsonConcat({
-    src: ['../quotes/gDocQuotes.json', '../quotes/wikiaQuotes.json'],
-    dest: "../quotes/mergedQuotes.json"
+    src: [gDocQuotesPath, wikiaQuotesPath],
+    dest: mergedQuotesPath
 }, function (json) {
     // console.log(json);
 });

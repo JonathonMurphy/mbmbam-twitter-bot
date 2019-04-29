@@ -10,11 +10,16 @@ const Wikiaapi = require('nodewikiaapi'),
       mywiki = new Wikiaapi('mbmbam'),
       queryString = require('query-string'),
       cheerio = require('cheerio'),
-      sortQuotes = require('../../lib/sortQuotes.js'),
       path = require('path'),
       // _cliProgress = require('cli-progress'),
       // bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');
+
+const sortQuotesPath = path.resolve(__dirname, '../../lib/sortQuotes.js'),
+      wikiaQuotesPath = path.resolve(__dirname, '../quotes/wikiaQuotes.json');
+
+
+const sortQuotes = require(sortQuotesPath);
 
 // bar1.start(16791, 0);
 
@@ -87,7 +92,7 @@ function getQuotes (episodeURL) {
         mbmbamQuotes.episodes.push(quoteObject);
 
       }).then(function(){
-        fs.writeFileSync('../quotes/wikiaQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
+        fs.writeFileSync(wikiaQuotesPath, JSON.stringify(mbmbamQuotes), function(err) {
           if(err) console.log(err)
         })
       })

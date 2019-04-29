@@ -4,6 +4,8 @@ const puppeteer = require('puppeteer'),
       path = require('path'),
       fs = require('fs');
 
+const gDocLinksPath = path.resolve(__dirname, '../links/gDocLinks.json');
+
 // Generate array of URL's from the Complpeted MBMBAM Transcripts G Doc list.
 (async () => {
   try {
@@ -32,7 +34,7 @@ const puppeteer = require('puppeteer'),
     });
 
     // linkArray.urls.slice(2);
-    fs.writeFileSync('../links/gDocLinks.json', JSON.stringify(linkArray), function(err) {
+    fs.writeFileSync(gDocLinksPath, JSON.stringify(linkArray), function(err) {
       if(err) console.log(err)
     })
     await browser.close();

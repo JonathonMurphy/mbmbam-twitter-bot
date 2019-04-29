@@ -3,19 +3,27 @@ console.log('Is this thing on...');
 
 const puppeteer = require('puppeteer'),
       cheerio = require('cheerio'),
-      sortQuotes = require('../../lib/sortQuotes.js'),
       _cliProgress = require('cli-progress'),
       path = require('path'),
       fs = require('fs');
+
+const sortQuotesPath = path.resolve(__dirname, '../../lib/sortQuotes.js'),
+      gDocLinksPath = path.resolve(__dirname, '../links/gDocLinks.json'),
+      gDocQuotesPath = path.resolve(__dirname, '../quotes/gDocQuotes.json');
+
+const sortQuotes = require(sortQuotesPath);
+
 // Start progress bar
 const bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic);
 bar1.start(99, 0);
 
 
+
+
 // Gets array of links from JSON document
 let gDocLinks;
   try {
-    gDocLinks = JSON.parse(fs.readFileSync('../links/gDocLinks.json'));
+    gDocLinks = JSON.parse(fs.readFileSync(gDocLinksPath));
   } catch (err) {
     if (err.code === 'ENOENT') {
       console.log('File not found!');
@@ -81,7 +89,7 @@ const regexEpisodeTitle = /MBMBAM \d{2,}\:/gmi;
         //  Close current page
         await page.close();
       } // End for loop
-      fs.writeFileSync('../quotes/gDocQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
+      fs.writeFileSync(gDocQuotesPath, JSON.stringify(mbmbamQuotes), function(err) {
         if(err) console.log(err)
       })
       await browser.close();
