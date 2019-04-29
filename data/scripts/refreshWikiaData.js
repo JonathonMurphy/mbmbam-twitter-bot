@@ -1,21 +1,20 @@
 console.log("We bout to get some data ya'll" + "\n");
-
-// Regex that should match Griffin:. G: or any other brothers name (and Clint) even if misspelled
-// /\[J|T|G|C][a-z]{0,6}\:
+// Maybe pull this out into two scripts so that it can be handled similarly to the gDocs
+// One script to get links and store the
+// Another to pull the data from the links
 
 const Wikiaapi = require('nodewikiaapi'),
       wiki = 'http://mbmbam.wikia.com',
       rp = require('request-promise'),
       mywiki = new Wikiaapi('mbmbam'),
+      queryString = require('query-string'),
       cheerio = require('cheerio'),
-      util = require('util'),
-      path = require('path'),
       sortQuotes = require('../../lib/sortQuotes.js'),
-      _cliProgress = require('cli-progress'),
-      bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
+      // _cliProgress = require('cli-progress'),
+      // bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');
 
-bar1.start(1107, 0);
+// bar1.start(16791, 0);
 
 function getEpisodes() {
   mywiki.getArticlesList({
@@ -23,7 +22,7 @@ function getEpisodes() {
   }).then(function (data) {
     let episodeArray = [];
     data.items.forEach(function (item, i) {
-      bar1.increment();
+      // bar1.increment();
       if (data.items[i].url.includes('Episode_') && !data.items[i].url.hasOwnProperty('undefined') ) {
         episodeArray.push(data.items[i].url);
       }
@@ -39,10 +38,14 @@ function getQuotes (episodeURL) {
   // Start of new data structure
   mbmbamQuotes.episodes = [];
   episodeURL.forEach(function (episode, index, array){
-    bar1.increment();
+    // bar1.increment();
     let quoteObject = {
       url: wiki + episodeURL[index],
-      episode: episodeURL[index].substr(6).replace('_', ' '),
+      // This obtusely long value is taking the URLs ending, removing the '/wiki/' part
+      // decoding with queryString.parse then  getting the key of the resulting object
+      // removing it from an array, and then finally removing the '_' characters and
+      // replacing them with spaces 
+      episode: Object.keys(queryString.parse(episodeURL[index].substr(6)))[0].replace(/_/g, ' '),
       quotes: {
         justin: [],
         travis: [],
@@ -61,6 +64,7 @@ function getQuotes (episodeURL) {
       .then(function ($) {
         let episodeName = options.uri.replace('http://mbmbam.wikia.com/wiki/', '');
         $('p, u, i').each(function (i, elem) {
+          // bar1.increment();
           const regexFilter = /\byahoo\b|\bsponsored\b|\bmbmbam\b|\bhousekeeping\b|\boriginally released\b|\bepisode\b|\bSuggested talking points\b|\bintro\b|\bMy Brother My Brother and Me\b|\b.*,.*,.*,.*\b/gi;
           const regexTimeStamp = /[0-9]{1,2}:+[0-9]{2}/gm;
           let textLength = $(this).text().length;
@@ -72,7 +76,7 @@ function getQuotes (episodeURL) {
             text.replace('subStringSelection', '')
             return text;
           }
-          if (textLength < 272 && textLength > 15 && (m = regexFilter.test(text)) == false) {
+          if ((m = regexFilter.test(text)) == false) {
             // Filters quotes by brother
             sortQuotes(text, quoteObject);
           }

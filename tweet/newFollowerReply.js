@@ -1,7 +1,7 @@
 const postTweet = require('../lib/postTweet.js'),
       fs = require('fs');
 
-const newFollowerReplies = JSON.parse(fs.readFileSync('../data/quotes/newFollowerReplies.json'));
+const newFollowerReplies = JSON.parse(fs.readFileSync('../data/replies/newFollowerReplies.json'));
 const followerInfo = JSON.parse(fs.readFileSync('../followers/data/followerInfo.json'));
 
 function checkForNewFollowers () {

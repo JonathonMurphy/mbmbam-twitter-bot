@@ -16,10 +16,6 @@ const puppeteer = require('puppeteer'),
     // Assins all the HTML content of the page to a variable and then give cheerio access to it.
     let html = await page.content();
     const $ = cheerio.load(html);
-    // $().logHtml() function creator.
-    $.prototype.logHtml = function() {
-      console.log(this.html());
-    };
     // Sets up that array for later use.
     let linkArray = {
       urls: []
@@ -34,7 +30,7 @@ const puppeteer = require('puppeteer'),
     });
 
     // linkArray.urls.slice(2);
-    fs.writeFileSync('../gDocLinks.json', JSON.stringify(linkArray), function(err) {
+    fs.writeFileSync('../links/gDocLinks.json', JSON.stringify(linkArray), function(err) {
       if(err) console.log(err)
     })
     await browser.close();

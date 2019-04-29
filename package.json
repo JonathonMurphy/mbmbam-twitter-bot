@@ -4,7 +4,7 @@
   "description": "Tweets random MBMBAM quotes and Yahoo Answers questions ",
   "main": "index.js",
   "scripts": {
-    "start": "node tweetQuotes.0.1.js",
+    "start": "node ./tweet/sendTweet.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,13 +15,12 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "cli-progress": "^2.1.1",
-    "node-html-parser": "^1.1.10",
+    "json-concat": "0.0.1",
     "nodewikiaapi": "^2.0.2",
     "puppeteer": "^1.15.0",
+    "query-string": "^6.5.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
-    "twit": "^2.2.11",
-    "unescape": "^1.0.1",
-    "wtf-8": "^1.0.1"
+    "twit": "^2.2.11"
   }
 }

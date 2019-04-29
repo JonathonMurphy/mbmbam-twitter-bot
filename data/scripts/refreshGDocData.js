@@ -1,17 +1,19 @@
+console.log('Is this thing on...');
+
 const puppeteer = require('puppeteer'),
       cheerio = require('cheerio'),
       sortQuotes = require('../../lib/sortQuotes.js'),
       _cliProgress = require('cli-progress'),
-      bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic),
       fs = require('fs');
 // Start progress bar
+const bar1 = new _cliProgress.Bar({}, _cliProgress.Presets.shades_classic);
 bar1.start(99, 0);
-console.log('Is this thing on...')
+
 
 // Gets array of links from JSON document
 let gDocLinks;
   try {
-    gDocLinks = JSON.parse(fs.readFileSync('../gDocLinks.json'));
+    gDocLinks = JSON.parse(fs.readFileSync('../links/gDocLinks.json'));
   } catch (err) {
     if (err.code === 'ENOENT') {
       console.log('File not found!');
@@ -28,7 +30,7 @@ let mbmbamQuotes = new Object();
 mbmbamQuotes.episodes = [];
 
 // Regex filters
-const regexEpisodeTitle = /MBMBAM \d{2,}\:/gm;
+const regexEpisodeTitle = /MBMBAM \d{2,}\:/gmi;
 
   (async () => {
     try {
@@ -61,19 +63,15 @@ const regexEpisodeTitle = /MBMBAM \d{2,}\:/gm;
         // Assins all the HTML content of the page to a variable and then give cheerio access to it.
         let html = await page.content();
         const $ = cheerio.load(html);
-        // $().logHtml() function creator.
-        $.prototype.logHtml = function() {
-          console.log(this.html());
-        };
-        // $().logHtml() function creator.
-        $.prototype.logText = function() {
-          console.log(this.text());
-        };
         let m;
         $('#contents').children('p').each(function (i, elem) {
           let text = $(this).text();
-          // Filters by brother
-          sortQuotes(text, quoteObject);
+          if ((m = regexEpisodeTitle.test(text)) == true) {
+            quoteObject.episode = text.replace('MBMBAM', 'Episode');
+          } else {
+            // Filters by brother
+            sortQuotes(text, quoteObject);
+          }
         });
         // Push new episode object in to the array
         mbmbamQuotes.episodes.push(quoteObject);
@@ -81,7 +79,7 @@ const regexEpisodeTitle = /MBMBAM \d{2,}\:/gm;
         //  Close current page
         await page.close();
       } // End for loop
-      fs.writeFileSync('./quotes/gDocQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
+      fs.writeFileSync('../quotes/gDocQuotes.json', JSON.stringify(mbmbamQuotes), function(err) {
         if(err) console.log(err)
       })
       await browser.close();
