@@ -7,7 +7,7 @@ https://twitter.com/Mbmbam_Quotes
 
 ## How it Works
 
-The quotes from the MBMBAM Transcript Project are scraped via a puppeteer script, that uses cheerio to pull out the individual elements out of the Google Docs pages. Those elements then filtered out using various regular expressions, and stored in a JSON document. The quotes from Wikia are pulled in a similar fashion, but instead of using puppeteer to scrape the data, the quotes from Wikia are pulled via API calls.
+The quotes from the MBMBAM Transcript Project are scraped via a puppeteer script, that uses cheerio to pull out the individual elements out of the Google Docs pages. Those elements then filtered out using various regular expressions, sorted according to the speaker, and stored in a JSON document. The quotes from Wikia are pulled in a similar fashion, but instead of using puppeteer to scrape the data, the quotes from Wikia are pulled via API calls.
 
 The quotes from each source are then merged together into one JSON document, which gets pulled into the scripts in the 'tweet' directory, and tweeted out via the Twitter API using the Twit package.
 
