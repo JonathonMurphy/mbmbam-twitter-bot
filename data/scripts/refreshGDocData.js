@@ -40,7 +40,8 @@ let mbmbamQuotes = new Object();
 mbmbamQuotes.episodes = [];
 
 // Regex filters
-const regexEpisodeTitle = /MBMBAM \d{2,}\:/gmi;
+const regexEpisodeTitle = /MBMBAM\s{1}\d{2,}\:.*/mi;
+const quoteRegex = /(?<speaker>(?<threeNames>[A-Z]{1}[a-zA-Z]*\s{1}[A-Z]{1}[a-zA-Z]*\s{1}[A-Z]{1}[a-zA-Z]*\s*)|(?<twoNames>[A-Z]{1}[a-zA-Z]*\s{1}[a-zA-Z]*\s*)|(?<oneName>[A-Z]{1}[a-zA-Z]*\s*))(?<lines>\:\s*.*\s*[^A-Z]*)/gm;
 
   (async () => {
     try {
@@ -56,12 +57,7 @@ const regexEpisodeTitle = /MBMBAM \d{2,}\:/gmi;
         let quoteObject = {
           url: urlArray[i],
           episode: '',
-          quotes: {
-            justin: [],
-            travis: [],
-            griffin: [],
-            unattributed: []
-          }
+          quotes: {}
         };
         // Open new page and load current url from the arracy in puppeteer
         const page = await browser.newPage();
@@ -73,16 +69,40 @@ const regexEpisodeTitle = /MBMBAM \d{2,}\:/gmi;
         // Assins all the HTML content of the page to a variable and then give cheerio access to it.
         let html = await page.content();
         const $ = cheerio.load(html);
-        let m;
-        $('#contents').children('p').each(function (i, elem) {
-          let text = $(this).text();
-          if ((m = regexEpisodeTitle.test(text)) == true) {
-            quoteObject.episode = text.replace('MBMBAM', 'Episode');
-          } else {
-            // Filters by brother
-            sortQuotes(text, quoteObject);
-          }
-        });
+        // let m;
+        // let pageText = $('#contents').innerText()
+        // grab all the text contents with innerText() and then use regex to navigate it
+        // $('#contents').children('p').each(function (i, elem) {
+        //   let text = $(this).text();
+        //   if ((m = regexEpisodeTitle.test(text)) == true) {
+        //     quoteObject.episode = text.replace('MBMBAM', 'Episode');
+        //   } else {
+        //     // Filters by brother
+        //     sortQuotes(text, quoteObject);
+        //   }
+        // });
+        /**/
+        let str;
+        $('span').each(function(i, elem){
+          str += $(this).text() + '\n'
+        })
+        let regexMatches = {
+          matches: []
+        }
+        episodeTitle = str.match(regexEpisodeTitle);
+        if (episodeTitle != null) {
+          quoteObject.episode = episodeTitle[0].replace(/MBMBAM/i, 'Episode');
+        } else {
+          quoteObject.episode = "n/a"
+        }
+        regexMatches.matches = str.match(quoteRegex)
+        regexMatches.matches.map(function(entry, index, array){
+          array[index] = entry.replace(/\r?\n|\r/g, '')
+        })
+        regexMatches.matches.forEach(function(match) {
+          sortQuotes(match, quoteObject)
+        })
+        /**/
         // Push new episode object in to the array
         mbmbamQuotes.episodes.push(quoteObject);
 
