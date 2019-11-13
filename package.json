@@ -1,7 +1,7 @@
 {
   "name": "mbmbam-twitter",
   "version": "2.0.0",
-  "description": "Tweets random MBMBAM quotes and Yahoo Answers questions ",
+  "description": "Tweets random MBMBaM quotes",
   "repository": "https://github.com/JonathonMurphy/mbmbam-twitter-bot",
   "main": "mbmbam-twitter-bot.js",
   "scripts": {
@@ -9,12 +9,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "MBMBAM"
+    "MBMBaM"
   ],
   "author": "Jonathon Seth Murphy",
   "license": "ISC",
   "dependencies": {
-    "query-string": "^6.5.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "twit": "^2.2.11"
