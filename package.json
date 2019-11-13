@@ -1,8 +1,9 @@
 {
   "name": "mbmbam-twitter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Tweets random MBMBAM quotes and Yahoo Answers questions ",
-  "main": "index.js",
+  "repository": "https://github.com/JonathonMurphy/mbmbam-twitter-bot",
+  "main": "mbmbam-twitter-bot.js",
   "scripts": {
     "start": "node ./tweet/sendTweet.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,11 +14,6 @@
   "author": "Jonathon Seth Murphy",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "cli-progress": "^2.1.1",
-    "json-concat": "0.0.1",
-    "nodewikiaapi": "^2.0.2",
-    "puppeteer": "^1.15.0",
     "query-string": "^6.5.0",
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
