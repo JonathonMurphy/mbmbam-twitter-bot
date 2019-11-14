@@ -9,7 +9,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "MBMBaM"
+    "MBMBaM",
+    "Twitter",
+    "Twitter bot"
   ],
   "author": "Jonathon Seth Murphy",
   "license": "ISC",
