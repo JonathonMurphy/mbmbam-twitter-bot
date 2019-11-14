@@ -7,7 +7,7 @@ https://twitter.com/Mbmbam_Quotes
 
 ## How it Works
 
-Makes API calls to mbmbam.app/api/search/random to pul random quotes, and then sends them out to Twitter via Twit  
+Makes API calls to https://mbmbam.app/api/search/random to pull random quotes, and then sends them out to Twitter via Twit  
 
 ## Setup
 
